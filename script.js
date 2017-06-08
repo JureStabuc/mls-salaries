@@ -970,17 +970,17 @@ function draw(year) {
 }
 
 d3.queue()
-    .defer(d3.csv, '../top10/mls-top10-2017.csv')
-    .defer(d3.csv, '../top10/mls-top10-2016.csv')
-    .defer(d3.csv, '../top10/mls-top10-2015.csv')
-    .defer(d3.csv, '../top10/mls-top10-2014.csv')
-    .defer(d3.csv, '../top10/mls-top10-2013.csv')
-    .defer(d3.csv, '../top10/mls-top10-2012.csv')
-    .defer(d3.csv, '../top10/mls-top10-2011.csv')
-    .defer(d3.csv, '../top10/mls-top10-2010.csv')
-    .defer(d3.csv, '../top10/mls-top10-2009.csv')
-    .defer(d3.csv, '../top10/mls-top10-2008.csv')
-    .defer(d3.csv, '../top10/mls-top10-2009.csv')
+    .defer(d3.csv, 'top10/mls-top10-2017.csv')
+    .defer(d3.csv, 'top10/mls-top10-2016.csv')
+    .defer(d3.csv, 'top10/mls-top10-2015.csv')
+    .defer(d3.csv, 'top10/mls-top10-2014.csv')
+    .defer(d3.csv, 'top10/mls-top10-2013.csv')
+    .defer(d3.csv, 'top10/mls-top10-2012.csv')
+    .defer(d3.csv, 'top10/mls-top10-2011.csv')
+    .defer(d3.csv, 'top10/mls-top10-2010.csv')
+    .defer(d3.csv, 'top10/mls-top10-2009.csv')
+    .defer(d3.csv, 'top10/mls-top10-2008.csv')
+    .defer(d3.csv, 'top10/mls-top10-2009.csv')
 
 
     .await(function(error, d2017, d2016, d2015, d2014, d2013, d2012, d2011, d2010, d2009, d2008, d2007) {
