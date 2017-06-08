@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MLS Salaries</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
+</head>
+<body>
+    <h1>MLS LEAGUE</h1>
+    <p class="article">The North American market has always attracted star footballers in their late careers, as this was their last chance to earn some serious money. Years before the Major League Soccer (MLS), the North American Soccer League attracted the likes of Pelé, Franz Beckenbauer, Johan Cruyff, the 1966 World Cup Final hat-trick scorer Geoff Hurst or George Best. Since 2007, the Designated Player Rule again makes it possible for clubs in the MLS to sign wold-class players considered outside of the salary cap.</p>
+    <p class="article">When David Beckham signed his 5 year $250 million worth contract with LA Galaxy in 2007, he became by far the highest paid footballer in the MLS. Despite Beckham’s salary, other players could only dream of such an amount. At that time the total guaranteed compensation amount was just over $42 million. But through years, following the Beckham hype, new teams emerged as they saw an opportunity in the growing football market and attracted world-class players in the late of their careers. This year, when the Major League Soccer Players Union (MLSPU) released its salary numbers, player’s compensation exceeded $200 million for the first time.</p>
+
+    <div id="total">
+    </div>
+    <p class="article">The raise of the total amount of salaries is also the effect of the rise of popularity of football in the USA as more clubs joined the league, which was followed by the raise of the number of footballers. In 2007, 371 players were employed by MLS clubs. Over the years, the number had risen each year, reaching its top in 2017 with 616 footballers playing for 22 clubs. In contrast, in 2007 the league consisted of 13 teams.</p>
+
+    <div id="all-players">
+    </div>
+    <p class="article">Attracting world class players with enormous contracts resulted in the raise of the average annual salary. When Beckham joined the league, a player was paid $113,810 on average, which has over the years risen to $326,139.</p>
+
+    <div id="average">
+    </div>
+    <p class="article">Because of the highly paid designated players, the average salary outpaced the median through years. In comparison to average salary in 2007, the median figure was only $50,400 and has risen through years reaching the top this year with $135,000. Compared to last year, the median salary increased more than the average, $18,000 compared to $10,000. There is still a huge gap between the highest paid players and the average, but the increase shows that the league is attracting more and more players in the mid-range contracts.</p>
+
+    <div id="median">
+    </div>
+    <p class="article">With Bastian Schweinsteiger as the most recent designated player, more and more MLS clubs can afford to attract star footballers and offer them contracts worth several million dollars. When Beckham started his crusade in the MLS, there were only 4 players who would be considered “millionaires”. Over the years the league attracted players such as Thierry Henry, Rafael Marquez, David Villa, Didier Drogba, Frank Lampard, Steven Gerrard, Andrea Pirlo, Sebastian Giovinco and Kaka, raising the number of players earning a million dollars or more to 28.</p>
+
+    <div id="over-mio">
+    </div>
+    <p class="article">Until 2012 Beckham had led the scoreboard of the top 10 earners in the MLS when Thierry Henry took the lead with an annual salary of $5.6 millions. Offering large salaries the league became attractive for european players in their prime, such as a former Juventus forward Sebastian Giovinco. The Italian international joined FC Toronto in 2015 for an annual salary of more than $7 million, which made him the second most expensive player in the MLS behind Kaka to this day.</p>
+
+    <div class="slider">
+       <label for="year">Please select a year: </label>
+       <input type="range" min=2007 max=2017 step=1 id="year" value=2017 oninput="selected_year.value = year.value">
+       <output name="selected_year" id="selected_year">2017</output>
+    </div>
+    <div id="vis">
+    </div>
+    <p class="article">The salary numbers show that the MLS is growing and attracting world-class players, who choose it for the last stop of their career. But despite large amounts of money and the raise of popularity of football in the USA, it is still hard to believe that the MLS SuperDraft will attract talented european youngsters in the near future.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

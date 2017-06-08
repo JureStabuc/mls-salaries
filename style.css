@@ -1,0 +1,301 @@
+/*CSS RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+                /*--------------------Mobile responsive--------------------*/
+
+.slider {
+         width: 90%;
+         margin: 0 auto;
+       }
+/*--------------------Line charts--------------------*/
+
+#total, #average, #median, #all-players, #over-mio {
+  height: 40%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*--------------------Bar chart--------------------*/
+
+#vis {
+  height: 40%;
+  width: 100%;
+  margin: 0 auto;
+
+}
+#total, #average, #median, #all-players, #over-mio, #vis .title {
+font-size: 15px;
+text-anchor: middle;
+}
+
+/*--------------------Tooltips--------------------*/
+
+.tooltip {
+    position: absolute;
+}
+
+.tooltip p {
+    background-color: white;
+    border: #eee 1px solid;
+    padding: 2px;
+    font-family: helvetica;
+    font-size: 11px;
+}
+
+.tooltip_top {
+	position: absolute;
+	display: none;
+	background-color: white;
+	border: #eee 1px solid;
+	padding: 2px;
+	font-family: helvetica;
+	font-size: 11px;
+}
+
+/*--------------------Line style--------------------*/
+
+.line, .line_average, .line_median, .line_allPlayers, .line_overMio {
+fill: none;
+stroke-width: 4px;
+stroke: rgb(90, 193, 231);
+}
+
+/*--------------------Heading, Text--------------------*/
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.article {
+  display: flex;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 23px;
+  padding: 10px;
+}
+
+/*--------------------Tablet responsive--------------------*/
+
+
+@media all and (min-width: 700px) {
+
+.slider {
+width: 100%;
+padding-left: 120px;
+margin: 0 auto;
+}
+
+
+/*--------------------Line charts, Bar chart--------------------*/
+
+#total, #average, #median, #all-players, #over-mio {
+height: 60%;
+width: 80%;
+margin: 0 auto;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+#vis {
+height: 60%;
+width: 80%;
+margin: 0 auto;
+}
+
+#total, #average, #median, #all-players, #over-mio, #vis .title {
+font-size: 20px;
+text-anchor: middle;
+}
+
+/*--------------------Tooltips--------------------*/
+
+.tooltip {
+position: absolute;
+}
+
+.tooltip p {
+background-color: white;
+border: #eee 1px solid;
+padding: 10px;
+font-family: helvetica;
+font-size: 14px;
+}
+
+.tooltip_top {
+position: absolute;
+display: none;
+background-color: white;
+border: #eee 1px solid;
+padding: 10px;
+font-family: helvetica;
+font-size: 14px;
+}
+
+/*--------------------Line style--------------------*/
+
+.line, .line_average, .line_median, .line_allPlayers, .line_overMio {
+fill: none;
+stroke-width: 4px;
+stroke: rgb(90, 193, 231);
+}
+
+/*--------------------Heading, text--------------------*/
+h1 {
+font-size: 40px;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.article {
+font-size: 25px;
+line-height: 35px;
+padding: 0px;
+padding-left: 120px;
+padding-right: 120px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+}
+
+/*--------------------Desktop responsive--------------------*/
+
+
+@media all and (min-width: 1024px) {
+
+.slider {
+width: 100%;
+padding-left: 280px;
+margin: 0 auto;
+}
+
+
+/*--------------------Line charts, Bar chart--------------------*/
+
+#total, #average, #median, #all-players, #over-mio {
+height: 60%;
+width: 60%;
+margin: 0 auto;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+#vis {
+height: 60%;
+width: 60%;
+margin: 0 auto;
+}
+
+#total, #average, #median, #all-players, #over-mio, #vis .title {
+font-size: 20px;
+text-anchor: middle;
+}
+
+/*--------------------Tooltips--------------------*/
+
+.tooltip {
+position: absolute;
+}
+
+.tooltip p {
+background-color: white;
+border: #eee 1px solid;
+padding: 10px;
+font-family: helvetica;
+font-size: 14px;
+}
+
+.tooltip_top {
+position: absolute;
+display: none;
+background-color: white;
+border: #eee 1px solid;
+padding: 10px;
+font-family: helvetica;
+font-size: 14px;
+}
+
+/*--------------------Line style--------------------*/
+
+.line, .line_average, .line_median, .line_allPlayers, .line_overMio {
+fill: none;
+stroke-width: 4px;
+stroke: rgb(90, 193, 231);
+}
+
+/*--------------------Heading, text--------------------*/
+h1 {
+font-size: 40px;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.article {
+font-size: 25px;
+line-height: 35px;
+padding: 0px;
+padding-left: 280px;
+padding-right: 280px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+}
