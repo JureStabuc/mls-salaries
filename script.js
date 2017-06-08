@@ -403,7 +403,7 @@ svg_top.append("text")
     .attr("class", "title")
     .attr("x", (width_top/2))
     .attr("y", 10 - (margin_top.top/5))
-    .text("MLS top 10 highest earners");
+    .text("MLS top 10 earners");
 
 // TOTAL
 d3.csv('salaries.csv', function(csv_data) {
